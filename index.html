@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DDM Cleaning Solutions — Premium vacate and pre-sale property cleaning across Perth, Western Australia. 8 years experience. 3,000+ properties cleaned." />
+  <meta name="theme-color" content="#1A0A2E" />
+  <meta name="robots" content="index, follow" />
+  <title>DDM Cleaning Solutions — Premium Property Cleaning | Perth WA</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="DDM Cleaning Solutions — Premium Property Cleaning" />
+  <meta property="og:description" content="8 years experience. 3,000+ properties cleaned. Perth's trusted vacate and pre-sale cleaning specialists." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💎</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Security Headers via Meta -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --deep-purple: #1A0A2E;
+      --purple-mid: #2D1550;
+      --purple-accent: #4B0082;
+      --emerald: #043927;
+      --emerald-light: #065F46;
+      --gold: #D4AF37;
+      --gold-soft: #E8C960;
+      --off-white: #F9F7F4;
+      --white: #FFFFFF;
+      --cream: #FDF8F0;
+      --dark: #0F0A1A;
+      --grey: #6B6880;
+      --grey-light: #9B97A8;
+      --border: #E8E4EF;
+      --border-dark: #2A1845;
+      --shadow-soft: 0 4px 24px rgba(26, 10, 46, 0.08);
+      --shadow-mid: 0 8px 40px rgba(26, 10, 46, 0.12);
+      --shadow-strong: 0 16px 64px rgba(26, 10, 46, 0.18);
+      --gradient-hero: linear-gradient(135deg, #1A0A2E 0%, #0D1F1A 50%, #1A0A2E 100%);
+      --gradient-gold: linear-gradient(135deg, #D4AF37, #E8C960);
+      --gradient-section: linear-gradient(180deg, #043927 0%, #032B1E 100%);
+    }
+
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+      background: var(--off-white);
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== TYPOGRAPHY ===== */
+    .heading-xl {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .heading-lg {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .heading-md {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 3vw, 32px);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .body-lg { font-size: 18px; line-height: 1.8; }
+    .body-md { font-size: 16px; line-height: 1.7; }
+    .body-sm { font-size: 14px; line-height: 1.6; }
+
+    /* ===== UTILITIES ===== */
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .text-center { text-align: center; }
+    .text-gold { color: var(--gold); }
+    .text-emerald { color: var(--emerald-light); }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 24px;
+      transition: all 0.4s ease;
+      background: transparent;
+    }
+
+    nav.scrolled {
+      background: rgba(26, 10, 46, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 12px 24px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-logo-mark {
+      width: 40px;
+      height: 40px;
+      background: var(--gradient-gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--deep-purple);
+    }
+
+    .nav-logo-text {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-logo-text span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--gradient-gold) !important;
+      color: var(--deep-purple) !important;
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      letter-spacing: 0.5px;
+      transition: transform 0.3s, box-shadow 0.3s !important;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Mobile menu */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      margin: 6px 0;
+      transition: all 0.3s;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: var(--gradient-hero);
+      overflow: hidden;
+      padding: 120px 24px 80px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(600px 400px at 20% 30%, rgba(75, 0, 130, 0.25), transparent 60%),
+        radial-gradient(500px 350px at 80% 70%, rgba(4, 57, 39, 0.3), transparent 60%),
+        radial-gradient(300px 300px at 50% 50%, rgba(212, 175, 55, 0.08), transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Subtle pattern overlay */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 800px;
+      animation: fadeInUp 1s ease;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--gold);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+
+    .hero-badge::before {
+      content: '✦';
+      font-size: 10px;
+    }
+
+    .hero h1 {
+      color: var(--white);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .hero-sub {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 64px;
+    }
+
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gradient-gold);
+      color: var(--deep-purple);
+      padding: 16px 36px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-outline-light {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--white);
+      padding: 16px 36px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 15px;
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .btn-outline-light:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* Trust stats */
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .hero-stat-label {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    /* ===== SECTION COMMON ===== */
+    section { padding: 100px 24px; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--purple-accent);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 16px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .section-sub {
+      font-size: 17px;
+      color: var(--grey);
+      max-width: 600px;
+      line-height: 1.8;
+      margin-bottom: 60px;
+    }
+
+    /* ===== ABOUT / WHY DDM ===== */
+    #about { background: var(--off-white); }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .about-features {
+      display: grid;
+      gap: 28px;
+    }
+
+    .about-feature {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .about-icon {
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+      background: linear-gradient(135deg, rgba(75, 0, 130, 0.08), rgba(4, 57, 39, 0.08));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .about-feature h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+
+    .about-feature p {
+      color: var(--grey);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .about-image-block {
+      position: relative;
+    }
+
+    .about-image-wrapper {
+      background: var(--gradient-hero);
+      border-radius: 16px;
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-image-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.15), transparent 60%);
+    }
+
+    .about-quote {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .about-quote blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-style: italic;
+      color: var(--white);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .about-quote cite {
+      color: var(--gold);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .about-stat-bar {
+      position: absolute;
+      bottom: -30px;
+      left: 30px;
+      right: 30px;
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-around;
+      box-shadow: var(--shadow-strong);
+    }
+
+    .about-stat-item { text-align: center; }
+
+    .about-stat-item .num {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--purple-accent);
+    }
+
+    .about-stat-item .lbl {
+      font-size: 12px;
+      color: var(--grey);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 2px;
+    }
+
+    /* ===== SERVICES ===== */
+    #services {
+      background: var(--white);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--off-white);
+      border-radius: 16px;
+      padding: 36px 28px;
+      border: 1px solid var(--border);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--gradient-gold);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+      transform-origin: left;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-mid);
+      border-color: rgba(212, 175, 55, 0.2);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, var(--deep-purple), var(--emerald));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+
+    .service-card p {
+      color: var(--grey);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .service-includes {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .service-includes li {
+      list-style: none;
+      padding: 4px 0;
+      font-size: 14px;
+      color: var(--grey);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .service-includes li::before {
+      content: '✓';
+      color: var(--emerald-light);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    /* ===== DETAIL SECTIONS ===== */
+    #detail {
+      background: var(--gradient-hero);
+      color: var(--white);
+    }
+
+    #detail .section-label { color: var(--gold); }
+    #detail .section-title { color: var(--white); }
+    #detail .section-sub { color: rgba(255, 255, 255, 0.6); }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .detail-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s;
+    }
+
+    .detail-card:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(212, 175, 55, 0.3);
+    }
+
+    .detail-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .detail-card p,
+    .detail-card li {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .detail-card ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 16px;
+    }
+
+    .detail-card ul li::before {
+      content: '◇ ';
+      color: var(--gold);
+    }
+
+    /* ===== PRICING ===== */
+    #pricing {
+      background: var(--off-white);
+    }
+
+    .pricing-table {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-mid);
+      border: 1px solid var(--border);
+    }
+
+    .pricing-header {
+      background: var(--gradient-hero);
+      padding: 32px 40px;
+      text-align: center;
+    }
+
+    .pricing-header h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .pricing-header p {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+    }
+
+    .pricing-body { padding: 32px 40px; }
+
+    .pricing-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pricing-row:last-child { border-bottom: none; }
+
+    .pricing-row .config {
+      font-weight: 600;
+      color: var(--dark);
+      font-size: 15px;
+    }
+
+    .pricing-row .price {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: var(--purple-accent);
+      font-size: 18px;
+    }
+
+    .pricing-note {
+      text-align: center;
+      padding: 24px 40px 32px;
+      background: linear-gradient(135deg, rgba(75, 0, 130, 0.04), rgba(4, 57, 39, 0.04));
+      border-top: 1px solid var(--border);
+    }
+
+    .pricing-note p {
+      font-size: 14px;
+      color: var(--grey);
+      line-height: 1.7;
+    }
+
+    .pricing-note strong { color: var(--dark); }
+
+    .pricing-extras {
+      max-width: 800px;
+      margin: 40px auto 0;
+    }
+
+    .extras-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 24px;
+      color: var(--dark);
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .extras-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .extras-card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--purple-accent);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .extras-card ul {
+      list-style: none;
+    }
+
+    .extras-card li {
+      font-size: 14px;
+      color: var(--grey);
+      padding: 3px 0;
+    }
+
+    .extras-card li::before {
+      content: '+ ';
+      color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ===== PROCESS / HOW IT WORKS ===== */
+    #process { background: var(--white); }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 36px;
+      left: 10%;
+      right: 10%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--emerald-light), var(--purple-accent), var(--gold));
+      opacity: 0.3;
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .process-number {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 20px;
+      background: var(--off-white);
+      border: 2px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--purple-accent);
+      position: relative;
+      z-index: 2;
+      transition: all 0.3s;
+    }
+
+    .process-step:hover .process-number {
+      background: var(--deep-purple);
+      color: var(--gold);
+      border-color: var(--deep-purple);
+    }
+
+    .process-step h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--dark);
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: var(--grey);
+      line-height: 1.6;
+    }
+
+    /* ===== COVERAGE ===== */
+    #coverage {
+      background: var(--gradient-section);
+      color: var(--white);
+    }
+
+    #coverage .section-label { color: var(--gold); }
+    #coverage .section-title { color: var(--white); }
+
+    .coverage-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .coverage-text p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 24px;
+    }
+
+    .coverage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 12px 24px;
+      border-radius: 8px;
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .coverage-areas {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 40px;
+    }
+
+    .coverage-areas h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .coverage-areas p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    /* ===== CONTACT ===== */
+    #contact { background: var(--off-white); }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-info h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--dark);
+    }
+
+    .contact-info > p {
+      color: var(--grey);
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 32px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-detail:last-of-type { border-bottom: none; }
+
+    .contact-detail-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      background: linear-gradient(135deg, var(--deep-purple), var(--emerald));
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    .contact-detail-text {
+      font-size: 15px;
+      color: var(--dark);
+    }
+
+    .contact-detail-text span {
+      display: block;
+      font-size: 12px;
+      color: var(--grey);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+    }
+
+    /* Form */
+    .contact-form-wrapper {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: var(--shadow-mid);
+      border: 1px solid var(--border);
+    }
+
+    .contact-form-wrapper h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--dark);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 8px;
+      letter-spacing: 0.3px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark);
+      background: var(--off-white);
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--purple-accent);
+      background: var(--white);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--gradient-gold);
+      color: var(--deep-purple);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      letter-spacing: 0.5px;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--deep-purple);
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .footer-logo span { color: var(--gold); }
+
+    .footer-tagline {
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin-bottom: 24px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover { color: var(--gold); }
+
+    .footer-divider {
+      width: 60px;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.15);
+      margin: 24px auto;
+    }
+
+    .footer-credit {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 12px;
+    }
+
+    .footer-credit a {
+      color: rgba(212, 175, 55, 0.6);
+      transition: color 0.3s;
+    }
+
+    .footer-credit a:hover { color: var(--gold); }
+
+    .footer-copy {
+      color: rgba(255, 255, 255, 0.25);
+      font-size: 12px;
+      margin-top: 8px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 60px; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .process-steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .process-steps::before { display: none; }
+      .detail-grid { grid-template-columns: 1fr; }
+      .coverage-content { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      section { padding: 72px 20px; }
+
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 10, 46, 0.98);
+        backdrop-filter: blur(20px);
+        padding: 24px;
+        gap: 20px;
+      }
+
+      .hero { padding: 100px 20px 60px; min-height: auto; }
+      .hero-stats { gap: 32px; }
+      .hero-stat-number { font-size: 28px; }
+
+      .services-grid { grid-template-columns: 1fr; }
+      .process-steps { grid-template-columns: 1fr; }
+      .extras-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+
+      .about-stat-bar {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-top: 24px;
+      }
+
+      .detail-card ul { grid-template-columns: 1fr; }
+
+      .pricing-body { padding: 24px 20px; }
+      .pricing-header { padding: 24px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-actions { flex-direction: column; align-items: center; }
+      .hero-stats { flex-direction: column; gap: 20px; }
+      .about-stat-bar { flex-direction: column; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-mark">D</div>
+      <div class="nav-logo-text">DDM <span>Cleaning</span></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#detail">What We Clean</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Perth's Trusted Property Cleaning Specialists</div>
+    <h1 class="heading-xl">Immaculate Properties.<br><em>Every Time.</em></h1>
+    <p class="hero-sub">Premium vacate, pre-sale, and property cleaning solutions for real estate agents, property managers, and homeowners across Perth.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-gold">Request a Quote</a>
+      <a href="#services" class="btn-outline-light">View Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-number">8+</div>
+        <div class="hero-stat-label">Years Experience</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">3,000+</div>
+        <div class="hero-stat-label">Properties Cleaned</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-number">100%</div>
+        <div class="hero-stat-label">Satisfaction Focus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <div class="section-label reveal">Why DDM</div>
+        <h2 class="heading-lg section-title reveal">The Gold Standard in Property Cleaning</h2>
+        <p class="section-sub reveal">DDM Cleaning Solutions delivers meticulous, inspection-ready results for property professionals who demand perfection. We don't cut corners — we clean them.</p>
+        <div class="about-features">
+          <div class="about-feature reveal">
+            <div class="about-icon">🏆</div>
+            <div>
+              <h3>8 Years of Excellence</h3>
+              <p>Over 3,000 properties cleaned across Western Australia. We understand what property managers and agents need to pass inspections first time.</p>
+            </div>
+          </div>
+          <div class="about-feature reveal">
+            <div class="about-icon">🤝</div>
+            <div>
+              <h3>Built for B2B Partnerships</h3>
+              <p>We work with real estate agencies, property managers, and cleaning companies as a trusted subcontracting partner. Reliable, accountable, and always on schedule.</p>
+            </div>
+          </div>
+          <div class="about-feature reveal">
+            <div class="about-icon">📋</div>
+            <div>
+              <h3>Full Documentation</h3>
+              <p>Every job includes photo reporting on completion. Your property managers get visual proof of work completed — no guesswork, no callbacks.</p>
+            </div>
+          </div>
+          <div class="about-feature reveal">
+            <div class="about-icon">✦</div>
+            <div>
+              <h3>Pre-Sale Specialists</h3>
+              <p>Our signature service. We prepare properties for market with comprehensive internal and external cleaning — windows, pressure washing, gardens, the complete package.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-image-block reveal">
+        <div class="about-image-wrapper">
+          <div class="about-quote">
+            <blockquote>"We don't just clean properties — we prepare them to impress."</blockquote>
+            <cite>DDM Cleaning Solutions</cite>
+          </div>
+        </div>
+        <div class="about-stat-bar">
+          <div class="about-stat-item">
+            <div class="num">3,000+</div>
+            <div class="lbl">Properties</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="num">8+</div>
+            <div class="lbl">Years</div>
+          </div>
+          <div class="about-stat-item">
+            <div class="num">WA</div>
+            <div class="lbl">Wide Coverage</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="section-label reveal">Our Services</div>
+    <h2 class="heading-lg section-title reveal">Comprehensive Property Cleaning</h2>
+    <p class="section-sub reveal">From vacate cleans to pre-sale preparation — every service designed for inspection-ready results.</p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🏠</div>
+        <h3>Vacate Cleaning</h3>
+        <p>Complete end-of-lease cleaning to bond-back standard. Every room deep cleaned to pass the strictest property inspections.</p>
+        <ul class="service-includes">
+          <li>Full kitchen degreasing &amp; oven clean</li>
+          <li>Bathroom descaling &amp; mould removal</li>
+          <li>All tracks, vents &amp; light switches</li>
+          <li>Skirting boards &amp; door frames</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">💎</div>
+        <h3>Pre-Sale Preparation</h3>
+        <p>Our signature service. Transform any property into a buyer-ready showpiece with comprehensive internal and external cleaning.</p>
+        <ul class="service-includes">
+          <li>Complete interior deep clean</li>
+          <li>DI window cleaning</li>
+          <li>Pressure cleaning externals</li>
+          <li>Garden tidying &amp; presentation</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🏢</div>
+        <h3>Property Management</h3>
+        <p>Ongoing cleaning solutions for property managers. Reliable scheduling, photo documentation, and consistent results across your portfolio.</p>
+        <ul class="service-includes">
+          <li>Regular maintenance cleans</li>
+          <li>Turnover cleaning</li>
+          <li>Photo reporting on completion</li>
+          <li>Priority scheduling available</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🪟</div>
+        <h3>External Services</h3>
+        <p>Complete exterior property cleaning to complement our internal services. Ideal for pre-sale and prestige properties.</p>
+        <ul class="service-includes">
+          <li>Window cleaning (all types)</li>
+          <li>Pressure cleaning</li>
+          <li>Cobweb removal</li>
+          <li>Verandas, porches &amp; walkways</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">⚡</div>
+        <h3>Specialist Deep Clean</h3>
+        <p>Heavy-duty cleaning for properties that need extra attention. Mould, nicotine, fumes — we handle the jobs others won't.</p>
+        <ul class="service-includes">
+          <li>Mould remediation</li>
+          <li>Nicotine &amp; fume removal</li>
+          <li>Wall &amp; ceiling deep clean</li>
+          <li>Grout restoration</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">🏡</div>
+        <h3>Prestige Properties</h3>
+        <p>Bespoke cleaning packages for luxury homes, mansions, and furnished properties. White-glove service for high-value assets.</p>
+        <ul class="service-includes">
+          <li>Furnished property care</li>
+          <li>Upholstery cleaning</li>
+          <li>Skylight &amp; blind cleaning</li>
+          <li>Custom scope packages</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHAT WE CLEAN IN DETAIL ===== -->
+<section id="detail">
+  <div class="container">
+    <div class="section-label reveal">The DDM Standard</div>
+    <h2 class="heading-lg section-title reveal">What a Complete Clean Includes</h2>
+    <p class="section-sub reveal">Every room receives meticulous attention. Here's exactly what we deliver.</p>
+
+    <div class="detail-grid">
+      <div class="detail-card reveal">
+        <h3>🚪 Entry</h3>
+        <p>Deep cleaning of entrance door (both sides), frames and top ledge. All hardware polished — handles, locks, knockers. Floors cleaned with pH-neutral solution to protect surfaces.</p>
+      </div>
+
+      <div class="detail-card reveal">
+        <h3>🛋️ Living, Dining &amp; Bedrooms</h3>
+        <ul>
+          <li>Skirting boards dusted &amp; wiped</li>
+          <li>Wardrobes cleaned inside &amp; out</li>
+          <li>Internal windows, tracks &amp; frames</li>
+          <li>Light fittings &amp; ceiling fans</li>
+          <li>All cobwebs removed</li>
+          <li>Corners vacuumed &amp; dust-free</li>
+        </ul>
+      </div>
+
+      <div class="detail-card reveal">
+        <h3>🍳 Kitchen, Scullery &amp; Pantry</h3>
+        <ul>
+          <li>Cooktop &amp; oven deep clean</li>
+          <li>Racks &amp; trays with specialist chemicals</li>
+          <li>Range hood &amp; filters degreased</li>
+          <li>All cupboards sanitised in &amp; out</li>
+          <li>Benchtops, sinks &amp; splashbacks</li>
+          <li>Dishwasher exterior wiped</li>
+        </ul>
+      </div>
+
+      <div class="detail-card reveal">
+        <h3>🚿 Bathroom, Laundry &amp; Toilet</h3>
+        <ul>
+          <li>Soap scum &amp; limescale removal</li>
+          <li>Shower screens &amp; bathtubs</li>
+          <li>Vanity cabinet deep clean</li>
+          <li>Mirrors polished</li>
+          <li>Toilet bowl, rim &amp; waterline</li>
+          <li>Exhaust fan covers cleaned</li>
+        </ul>
+      </div>
+
+      <div class="detail-card reveal">
+        <h3>🔧 Throughout the Property</h3>
+        <ul>
+          <li>All surfaces dusted &amp; wiped</li>
+          <li>Door handles &amp; frames cleaned</li>
+          <li>Light switches &amp; power outlets sanitised</li>
+          <li>Light switch covers removed for cleaning</li>
+          <li>Sliding door tracks scrubbed</li>
+          <li>Fans, vents &amp; AC filters deep cleaned</li>
+        </ul>
+      </div>
+
+      <div class="detail-card reveal">
+        <h3>✨ Floor Care</h3>
+        <p>All hard floors meticulously mopped — vinyl, tiles, and timber. Every corner vacuumed to ensure zero dust buildup. Scuff marks spot-cleaned. Sliding door tracks vacuumed and scrubbed to remove all dirt and debris.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label reveal" style="justify-content: center;">Pricing</div>
+      <h2 class="heading-lg section-title reveal">Transparent Pricing</h2>
+      <p class="section-sub reveal" style="margin-left: auto; margin-right: auto;">Competitive rates based on property configuration. All prices in Australian Dollars.</p>
+    </div>
+
+    <div class="pricing-table reveal">
+      <div class="pricing-header">
+        <h3>Vacate Clean — Standard Rates</h3>
+        <p>Pricing by bedroom × bathroom configuration</p>
+      </div>
+      <div class="pricing-body">
+        <div class="pricing-row">
+          <span class="config">1 Bed × 1 Bath</span>
+          <span class="price">$250 – $370</span>
+        </div>
+        <div class="pricing-row">
+          <span class="config">2 Bed × 1 Bath</span>
+          <span class="price">$300 – $470</span>
+        </div>
+        <div class="pricing-row">
+          <span class="config">3 Bed × 1–2 Bath</span>
+          <span class="price">$400 – $540</span>
+        </div>
+        <div class="pricing-row">
+          <span class="config">4 Bed × 2+ Bath</span>
+          <span class="price">$550 – $650+</span>
+        </div>
+      </div>
+      <div class="pricing-note">
+        <p><strong>50% deposit required</strong> to secure your booking. Final pricing confirmed after property assessment. Extras quoted separately.</p>
+      </div>
+    </div>
+
+    <div class="pricing-extras reveal">
+      <h3 class="extras-title">Available Extras</h3>
+      <div class="extras-grid">
+        <div class="extras-card">
+          <h4>🏠 Internal Extras</h4>
+          <ul>
+            <li>Wall cleaning</li>
+            <li>Ceiling cleaning</li>
+            <li>Grout restoration</li>
+            <li>Blind &amp; roller blind cleaning</li>
+            <li>Skylight cleaning</li>
+            <li>Fridge cleaning</li>
+            <li>Upholstery cleaning</li>
+            <li>Additional rooms</li>
+            <li>Furnished properties</li>
+          </ul>
+        </div>
+        <div class="extras-card">
+          <h4>🌿 External Extras</h4>
+          <ul>
+            <li>Window cleaning (all types)</li>
+            <li>Cobweb removal</li>
+            <li>Pressure cleaning — floors &amp; porches</li>
+            <li>Flyscreen cleaning</li>
+            <li>Veranda cleaning</li>
+            <li>Letterbox cleaning</li>
+            <li>External light fittings</li>
+            <li>Garden raking &amp; tidying</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="process">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label reveal" style="justify-content: center;">How It Works</div>
+      <h2 class="heading-lg section-title reveal">Simple. Professional. Reliable.</h2>
+      <p class="section-sub reveal" style="margin-left: auto; margin-right: auto;">We make property cleaning effortless for property managers and agents.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="process-number">01</div>
+        <h3>Enquire</h3>
+        <p>Submit your property details through our form or call us directly. We respond within 24 hours.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-number">02</div>
+        <h3>Quote</h3>
+        <p>We assess the scope and provide a transparent quote based on property size and requirements.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-number">03</div>
+        <h3>Clean</h3>
+        <p>Our team delivers the DDM standard — meticulous, thorough, inspection-ready results.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-number">04</div>
+        <h3>Report</h3>
+        <p>You receive photo documentation of the completed clean. Visual proof, zero guesswork.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COVERAGE ===== -->
+<section id="coverage">
+  <div class="container">
+    <div class="coverage-content">
+      <div class="coverage-text reveal">
+        <div class="section-label">Service Area</div>
+        <h2 class="heading-lg section-title">Proudly Serving Perth</h2>
+        <p>DDM Cleaning Solutions currently services suburbs south of the river across the Perth metropolitan area. As our network of trusted cleaning professionals grows, we're expanding to cover all of Perth and beyond.</p>
+        <p>Whether you manage a single property or an entire portfolio — we scale to meet your needs.</p>
+        <div class="coverage-badge">📍 South of the River, Perth WA — Expanding Metro-Wide</div>
+      </div>
+      <div class="coverage-areas reveal">
+        <h3>Partner With Us</h3>
+        <p>Are you a real estate agency, property manager, or cleaning company looking for a reliable subcontracting partner?</p>
+        <p style="margin-top: 16px;">DDM Cleaning Solutions works with industry professionals to deliver consistent, documented results across property portfolios. We handle the cleaning — you handle the client relationship.</p>
+        <p style="margin-top: 16px; color: var(--gold); font-weight: 600;">Get in touch to discuss a partnership.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="section-label">Get in Touch</div>
+        <h3>Ready for an Immaculate Property?</h3>
+        <p>Whether you need a one-off vacate clean or an ongoing partnership, we're ready to discuss your requirements. No obligation — just straightforward, honest service.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div class="contact-detail-text">
+            <span>Phone</span>
+            <a href="tel:0424245775" style="font-weight: 600;">0424 245 775</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉️</div>
+          <div class="contact-detail-text">
+            <span>Email</span>
+            <a href="mailto:ddmcleaning.perth@gmail.com" style="font-weight: 600;">ddmcleaning.perth@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div class="contact-detail-text">
+            <span>Location</span>
+            South of the River, Perth WA
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper reveal">
+        <h3>Request a Quote</h3>
+        <form action="https://formsubmit.co/ddmcleaning.perth@gmail.com" method="POST">
+          <!-- FormSubmit Config -->
+          <input type="hidden" name="_subject" value="New Enquiry — DDM Cleaning Solutions" />
+          <input type="hidden" name="_captcha" value="true" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="Name" required placeholder="Your name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="Phone" required placeholder="Your phone number" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email" required placeholder="your@email.com" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select id="service" name="Service Required">
+                <option value="">Select a service</option>
+                <option value="Vacate Cleaning">Vacate Cleaning</option>
+                <option value="Pre-Sale Preparation">Pre-Sale Preparation</option>
+                <option value="Property Management Clean">Property Management Clean</option>
+                <option value="External Services">External Services</option>
+                <option value="Specialist Deep Clean">Specialist Deep Clean</option>
+                <option value="Prestige Property">Prestige Property</option>
+                <option value="B2B Partnership">B2B Partnership Enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="config">Property Configuration</label>
+              <select id="config" name="Property Configuration">
+                <option value="">Select configuration</option>
+                <option value="1x1">1 Bed × 1 Bath</option>
+                <option value="2x1">2 Bed × 1 Bath</option>
+                <option value="2x2">2 Bed × 2 Bath</option>
+                <option value="3x1">3 Bed × 1 Bath</option>
+                <option value="3x2">3 Bed × 2 Bath</option>
+                <option value="4x1">4 Bed × 1 Bath</option>
+                <option value="4x2">4 Bed × 2 Bath</option>
+                <option value="4x3">4 Bed × 3 Bath</option>
+                <option value="4x4">4 Bed × 4 Bath</option>
+                <option value="5x2">5 Bed × 2 Bath</option>
+                <option value="5x3">5 Bed × 3 Bath</option>
+                <option value="5x4">5 Bed × 4 Bath</option>
+                <option value="Other">Other / Commercial</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" name="Property Address" placeholder="Full property address" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Additional Details</label>
+            <textarea id="message" name="Message" placeholder="Tell us about the property, any specific requirements, or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Submit Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-logo">DDM <span>Cleaning Solutions</span></div>
+  <div class="footer-tagline">Premium Property Cleaning — Perth, Western Australia</div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-credit">Website by <a href="https://violetmedia.org" target="_blank" rel="noopener">Violet Media</a></div>
+  <div class="footer-copy">&copy; 2026 DDM Cleaning Solutions. All rights reserved.</div>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Scroll-triggered reveal animations
+  const revealElements = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('active');
+        }, index * 80);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // Navigation scroll effect
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Mobile navigation toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Close mobile nav on link click
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        const offset = 80;
+        const position = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top: position, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
